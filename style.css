@@ -1,114 +1,114 @@
-/*Reset padding dan margin agar layout tidak terganggu*/
+/* Reset padding dan margin agar layout tidak terganggu */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/*Style body : font modern, warna background abu-abu terang, dan warna teks abu gelap.*/
+/* Style body */
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  background: #f5f5f5;
-  color: #333;
-  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif; /* Gunakan font modern */
+  line-height: 1.6; /* Jarak antar baris teks 1.6 */
+  background: #f5f5f5; /* Warna latar abu terang */
+  color: #333;  /* Warna teks abu tua */
 }
 
-/*Style navigasi : agar tetap menempel saat scroll dan berwarna merah maroon*/
+/* Style navigasi */
 nav {
-  background-color: #8E1616;
-  padding: 1em;
+  background-color: #8E1616; /* Warna latar merah maroon */
+  padding: 1em; /* Ruang dalam navbar */
 }
 
-/*Membuat navbar horizontal dan rapi tanpa bullet*/
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
+  display: flex; /* Tampilan horizontal */
+  justify-content: center; /*Konten ditengah */
+  gap: 20px; /* Jarak antar item */
+  list-style: none; /* Hilangkan bullet list */
 }
 
-/*Link navbar berwarna putih dan berubah kuning saat hover*/
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  color: white; /* Warna teks putih */
+  text-decoration: none; /* Hilangkan garis bawah */
+  font-weight: bold; /* Huruf tebal */
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #ffd700; /* Kuning saat hover */
 }
 
-/*Style header : warna background merah terang*/
+/* Style header */
 header {
-  text-align: center;
-  padding: 2em 1em;
-  color: white;
-  background-color: #D84040;
+  text-align: center; /* Teks rata tengah */
+  padding: 2em 1em; /* Jarak dalam 2em AB 1em KK */
+  color: white; /* Warna teks putih */
+  background-color: #D84040; /* Warna latar merah terang */
 }
 
-/* Konten utama diberi padding dan dibatasi lebar maksimal agar tidak terlalu lebar di layar besar*/
+/* Style main */
 main {
-  padding: 1.5em;
-  max-width: 900px;
-  margin: auto;
+  padding: 1.5em; /* Jarak dalam 1.5em */
+  max-width: 900px; /* Maksimal lebar konten 900px */
+  margin: auto; /* Jarak luar otomatis */
 }
 
-/*Style profil agar fleksibel dengan layout responsif*/
+/* Style profil */
 .profil {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 2em;
+  display: flex; /* Tampilan fleksibel */
+  flex-wrap: wrap; /* Bisa wrap jika sempit */
+  align-items: center; /* Konten ditengah secara vertikal */
+  gap: 30px; /* Jarak antar elemen 30em */
+  margin-bottom: 2em; /* Jarak bawah 2em */
 }
 
-/*Style gambar profil agar ada tepian bulat dan ada animasi ketika hover biar keren dikit*/
+/* Style gambar profil */
 .foto-profil {
-  max-width: 300px;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
+  max-width: 300px; /* Ukuran maksimal gambar 30px */
+  border-radius: 20px; /* Sudut melengkung */
+  transition: transform 0.3s ease; /* Animasi lembut */
 }
 
 .foto-profil:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Memerbesar sedikit saat hover */
 }
 
-/* Bagian biodata mengisi sisa ruang yang tersedia*/
 .bio {
-  flex: 1;
+  flex: 1; /* Isi sisa ruang dari .profil */
 }
 
-/*Memberi jarak antar section agar tidak telalu mepet*/
+/* Style .tentang, .hobi, dan .kontak */
 .tentang, .hobi, .kontak {
-  margin-bottom: 5em;
+  margin-bottom: 5em; 
 }
 
-/*Menyesuaikan letak list agar rapi*/
+.tentang{
+  text-align : justify; /* Teks tengah */
+}
+
+/* Menyesuaikan letak list agar rapi */
 ul {
   padding-left: 20px;
 }
 
-/* Style footer biar rapi dan keren juga sesuai dengan warna navbar*/
+/* Style footer */
 footer {
-  text-align: center;
-  background-color: #8E1616;
-  color: white;
-  padding: 1em 0;
-  position: relative;
+  text-align: center; /* Teks tengah */
+  background-color: #8E1616; /* Warna sama seperti navbar */
+  color: white; /* Teks putih */
+  padding: 1em 0 ; /* Ruang atas bawah */
+  position: relative; /* Posisi biasa tapi bisa diatur */
   bottom: 0;
-  width: 100%;
+  width: 100%; /* Lebar penuh */
 }
 
 /* Style agar desain lebih responsif */
 @media (max-width: 768px) {
   .profil {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* Jadi vertikal di layar kecil */
+    text-align: center; /* Tengah semua */
   }
 
   nav ul {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; * Menu nav jadi vertikal */
+    gap: 10px;  /* Jarak antar item 10px */
   }
 }
